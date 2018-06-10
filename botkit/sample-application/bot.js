@@ -59,7 +59,7 @@ require(__dirname + '/components/subscribe_events.js')(controller);
 // Load in some helpers that make running Botkit on Glitch.com better
 require(__dirname + '/components/plugin_glitch.js')(controller);
 
-require(__dirname + '/components/plugin-pubnub.js')(controller, 'sub-c-4bf72568-2ec1-11e8-a0af-aaebd0429f42');
+require(__dirname + '/components/plugin-pubnub.js')(controller, process.env.pubnub_subkey);
 
 // enable advanced botkit studio metrics
 require('botkit-studio-metrics')(controller);
