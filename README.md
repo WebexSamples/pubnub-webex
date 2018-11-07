@@ -10,7 +10,7 @@ Only webhooks from the Webex API to your application transit over PubNub. API ca
 
 The file `pubnub-function.js` contains the code for the PubNub Function. It requires no configuration or changes, and can be deployed as is to your own PubNub account.
 
-Deploy the function by following the [PubNub Function documentation(https://www.pubnub.com/docs/tutorials/pubnub-functions). When asked for a type of Function, choose *On Request* and anything you'd like for a URI Path. This URI Path becomes part of the webhook URL you'll give to the Webex API, but PubNub provides a way to copy the entire URI, so it's not important that you choose something memorable here. Then, in the Functions code editor, paste the contents of `pubnub-function.js`.
+Deploy the function by following the [PubNub Function documentation](https://www.pubnub.com/docs/tutorials/pubnub-functions). When asked for a type of Function, choose *On Request* and anything you'd like for a URI Path. This URI Path becomes part of the webhook URL you'll give to the Webex API, but PubNub provides a way to copy the entire URI, so it's not important that you choose something memorable here. Then, in the Functions code editor, paste the contents of `pubnub-function.js`.
 
 The Function is stopped by default. Save the Function code, then press Restart to start up the Function. On the left side of the code, you'll see the URI path you chose, and a *Copy URL* button. Pressing this will copy the entire Webhook endpoint URL to your clipboard.
 
