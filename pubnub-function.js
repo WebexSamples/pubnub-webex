@@ -22,12 +22,11 @@ export default (request, response) => {
 
   let payload = JSON.parse(request.body);
 
-  return Promise.all([
-    publish(`webex-${payload.resource}-${payload.event}`, request.body),
-    publish(`webex-${payload.resource}all`, request.body),
-    publish(`webex-all-all`, request.body)
-  ])
-    .then(results => {
+  // this is just as good as your previous idea since I can subescribe to
+  // webex.*
+  // webex.memberships.*
+  // webex.memberships.created
+  publish(`webex.${payload.resource}.${payload.event}`, request.body).then(results => {
       return response.send("Published");
     })
     .catch(err => {
