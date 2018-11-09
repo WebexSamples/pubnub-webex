@@ -33,5 +33,5 @@ pubnub.addListener({
 
 console.log("Subscribing...");
 pubnub.subscribe({
-  channels: ['webex-messages-created', 'webex-messages-all', 'webex-all-all']
+  channels: ['webex.messages.created', 'webex.messages.*', 'webex.*']
 });

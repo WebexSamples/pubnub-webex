@@ -20,7 +20,7 @@ class PubnubBotkit {
 
     debug("Subscribing...");
     pubnub.subscribe({
-      channels: ['webex-all-all']
+      channels: ['webex.*']
     });
   }
 
