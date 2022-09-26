@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "pubnub": "^4.24.0"
+    "pubnub": "^4.37.0"
   },
   "devDependencies": {},
   "scripts": {
